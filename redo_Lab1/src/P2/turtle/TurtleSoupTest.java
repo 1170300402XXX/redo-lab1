@@ -49,6 +49,7 @@ public class TurtleSoupTest {
 	@Test
 	public void calculateBearingToPointTest() {
 		assertEquals(0.0, TurtleSoup.calculateBearingToPoint(0.0, 0, 0, 0, 1), 0.001);
+	//	System.out.println("**********");//*****
 		assertEquals(90.0, TurtleSoup.calculateBearingToPoint(0.0, 0, 0, 1, 0), 0.001);
 		assertEquals(359.0, TurtleSoup.calculateBearingToPoint(1.0, 4, 5, 4, 6), 0.001);
 	}
@@ -84,11 +85,17 @@ public class TurtleSoupTest {
 		assertEquals(convexHull, TurtleSoup.convexHull(points));
 
 		Point p11 = new Point(1, 1);
+		//System.out.println("[1,1]"+p11);//*****************
 		Point p1010 = new Point(10, 10);
+		//System.out.println("[10,10]"+p1010);//*****************
 		Point p110 = new Point(1, 10);
+		//System.out.println("[1,10}"+p110);//*****************
 		Point p12 = new Point(1, 2);
+		//System.out.println("[1,2}"+p12);//*****************
 		Point p23 = new Point(2, 3);
+		//System.out.println("[2,3}"+p23);//*****************
 		Point p32 = new Point(3, 2);
+		//System.out.println("[3,2}"+p32);//*****************
 
 		points.add(p11);
 		convexHull.add(p11);
